@@ -1,7 +1,82 @@
 :root{
     --ColorBgbd: hsl(100,100%,100%);
-    --ColorSombra: 4px 4px 4px 6px hsl(0,0%,20%);
-    --ColorBorder: hsl(0,0%,33%);
+    --ColorSombra: 4px 4px 4px 6px hsl(0, 0%, 50%);
+    --ColorBorder: hsl(0,3%,70%);
     --ColorBlue:hsl(245,100%,0%);
+    --ColorBody: hsl(0,0%,97%);
+    --Colorinter: hsl(60,50%,90%);
+    --ColorinterRef: hsl(60,80%,60%);
 
+}
+
+body{
+    background-color: var(--ColorBody);
+}
+
+/* Estilos del aside Panel lateral */
+.container{
+    display:flex;
+    width: 900px;
+    background-color: var(--ColorSombra);
+    margin: 0 auto;
+    border-right: 1px solid;
+    border-color: var(--ColorBorder);
+    background-color: var(--ColorBgbd);
+    box-shadow: var(--ColorSombra);
+}
+.aside{
+    width: 40%;
+    background-color: var(--ColorBlue);
+    color: white;
+
+}
+
+.aside figure img{
+    width: 250px;
+    opacity: 85%;
+}
+
+.aside h2{
+    text-align: center;
+}
+
+/* estilos del main panel central*/
+
+.main{
+    padding: 2em;
+}
+
+.Ref{
+    text-align: center;
+    background-color: var(--Colorinter);
+}
+
+.Ref h2{
+    background-color: white;
+}
+
+.ref1{
+    display: inline-flex;
+    padding:.5em;
+    text-align: center;
+}
+
+.ref2{
+    display: inline-flex;
+    padding:.5em;
+    padding-bottom:1em;
+    text-align: center;
+}
+
+
+.Ref figure img{
+    width: 50px;
+}
+
+.Ref article {
+    border:1px solid var(--Colorinter);
+    border-color: var(--ColorBorder);
+    border-radius: 10px;
+    margin: .25em;
+   
 }
