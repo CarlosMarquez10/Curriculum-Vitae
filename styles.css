@@ -6,11 +6,13 @@
     --ColorBody: hsl(0,0%,97%);
     --Colorinter: hsl(60,50%,90%);
     --ColorinterRef: hsl(60,80%,60%);
+    --ColorBorderPrimary: hsl(0,0%,10%);
 
 }
 
 body{
     background-color: var(--ColorBody);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos del aside Panel lateral */
@@ -39,6 +41,7 @@ body{
 .aside h2{
     text-align: center;
     border-bottom: .5px solid;
+    background-color: var(--ColorBorderPrimary);
 }
 
 .pnlateral{
