@@ -38,6 +38,7 @@ body{
 
 .aside h2{
     text-align: center;
+    border-bottom: .5px solid;
 }
 
 .pnlateral{
@@ -48,6 +49,27 @@ body{
 
 .main{
     padding: 2em;
+}
+
+.main h2{
+    border-top: .5px solid;
+    border-bottom: .5px solid;
+}
+
+.main .Nomperfil{
+   background-color: var(--Colorinter) ; 
+}
+
+.Nomperfil h1,p{
+    margin:0;
+    text-align: center;
+
+}
+
+.main .experencia h3{
+    border-bottom: .5px solid;
+    margin: .5em;
+    padding: .25em;
 }
 
 .Ref{
