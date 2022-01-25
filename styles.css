@@ -61,6 +61,7 @@ body{
 
 .main .Nomperfil{
    background-color: var(--Colorinter) ; 
+   border-radius: 3px;
 }
 
 .Nomperfil h1,p{
@@ -75,9 +76,14 @@ body{
     padding: .25em;
 }
 
+.mainferen{
+    background-color: var(--Colorinter);
+    border-radius: 10px;
+    margin: 1em;
+}
+
 .Ref{
     text-align: center;
-    background-color: var(--Colorinter);
 }
 
 .Ref h2{
