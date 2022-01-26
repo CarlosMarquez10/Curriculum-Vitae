@@ -6,11 +6,13 @@
     --ColorBody: hsl(0,0%,97%);
     --Colorinter: hsl(60,50%,90%);
     --ColorinterRef: hsl(60,80%,60%);
+    --ColorBorderPrimary: hsl(0,0%,10%);
 
 }
 
 body{
     background-color: var(--ColorBody);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos del aside Panel lateral */
@@ -38,6 +40,12 @@ body{
 
 .aside h2{
     text-align: center;
+    border-bottom: .5px solid;
+    background-color: var(--ColorBorderPrimary);
+}
+
+.pnlateral{
+    margin:20px;
 }
 
 /* estilos del main panel central*/
@@ -46,9 +54,36 @@ body{
     padding: 2em;
 }
 
+.main h2{
+    border-top: .5px solid;
+    border-bottom: .5px solid;
+}
+
+.main .Nomperfil{
+   background-color: var(--Colorinter) ; 
+   border-radius: 3px;
+}
+
+.Nomperfil h1,p{
+    margin:0;
+    text-align: center;
+
+}
+
+.main .experencia h3{
+    border-bottom: .5px solid;
+    margin: .5em;
+    padding: .25em;
+}
+
+.mainferen{
+    background-color: var(--Colorinter);
+    border-radius: 10px;
+    margin: 1em;
+}
+
 .Ref{
     text-align: center;
-    background-color: var(--Colorinter);
 }
 
 .Ref h2{
