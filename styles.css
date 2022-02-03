@@ -2,11 +2,11 @@
     --ColorBgbd: hsl(100,100%,100%);
     --ColorSombra: 4px 4px 4px 6px hsl(0, 0%, 50%);
     --ColorBorder: hsl(0,3%,70%);
-    --ColorBlue:hsl(245,100%,0%);
-    --ColorBody: hsl(0,0%,97%);
-    --Colorinter: hsl(60,50%,90%);
+    --ColorBlue:rgb(208, 214, 219);
+    --ColorBody: rgb(234, 237, 240);
+    --Colorinter: rgb(239, 248, 250);
     --ColorinterRef: hsl(60,80%,60%);
-    --ColorBorderPrimary: hsl(0,0%,10%);
+    --ColorBorderPrimary: rgb(36, 81, 148);
 
 }
 
@@ -15,33 +15,63 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos del aside Panel lateral */
-.container{
-    display:flex;
+.containerbdy{
     width: 900px;
     background-color: var(--ColorSombra);
     margin: 0 auto;
     border-right: 1px solid;
     border-color: var(--ColorBorder);
+    border-radius: 15px;
     background-color: var(--ColorBgbd);
     box-shadow: var(--ColorSombra);
 }
+/* Estilos del aside Panel lateral */
+.container{
+    display:flex;
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+.header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50px;
+    background-color: var(--ColorBorderPrimary);
+}
+
+.footers{
+    margin-top: 32px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+    background-color: var(--ColorBorderPrimary);
+
+}
 .aside{
     width: 40%;
+    margin-left:10px;
+    margin-top: 20px;
+    border-radius: 7px;
+    height: 99%;
     background-color: var(--ColorBlue);
-    color: white;
+    color: var(--ColorBorderPrimary);
 
 }
 
 .aside figure img{
     width: 250px;
-    opacity: 85%;
+    
 }
 
 .aside h2{
     text-align: center;
     border-bottom: .5px solid;
-    background-color: var(--ColorBorderPrimary);
+    color: var(--ColorBorderPrimary);
+}
+
+.main h4{
+    color: var(--ColorBorderPrimary);
 }
 
 .pnlateral{
@@ -52,34 +82,54 @@ body{
 
 .main{
     padding: 2em;
+    
 }
 
 .main h2{
     border-top: .5px solid;
     border-bottom: .5px solid;
+    color: var(--ColorBorderPrimary);
 }
 
-.main .Nomperfil{
+.main h4{
+    color: var(--ColorBorderPrimary);
+}
+
+.containerbdy .Nomperfil{
    background-color: var(--Colorinter) ; 
    border-radius: 3px;
+   border-bottom: 1px solid;
+   display: flex;
+   width: 99%;
+   margin:auto;
+   margin-top:10px;
 }
 
-.Nomperfil h1,p{
-    margin:0;
-    text-align: center;
+.Nomperfil h1,h5{
+    margin-left: 2em;
+    text-align: bottom;
+    margin-bottom: 0;
 
+}
+
+.Nomperfil > h5{
+    margin-left: 320px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .main .experencia h3{
     border-bottom: .5px solid;
     margin: .5em;
     padding: .25em;
+    color: var(--ColorBorderPrimary);
 }
 
 .mainferen{
     background-color: var(--Colorinter);
     border-radius: 10px;
     margin: 1em;
+    color: var(--ColorBorderPrimary);
 }
 
 .Ref{
